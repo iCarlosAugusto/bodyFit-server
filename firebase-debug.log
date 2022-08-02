@@ -1,0 +1,909 @@
+[debug] [2022-08-01T14:46:24.140Z] ----------------------------------------------------------------------
+[debug] [2022-08-01T14:46:24.146Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Adm\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2022-08-01T14:46:24.147Z] CLI Version:   11.4.0
+[debug] [2022-08-01T14:46:24.148Z] Platform:      win32
+[debug] [2022-08-01T14:46:24.148Z] Node Version:  v16.16.0
+[debug] [2022-08-01T14:46:24.150Z] Time:          Mon Aug 01 2022 11:46:24 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2022-08-01T14:46:24.151Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-01T14:46:24.250Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-01T14:46:24.251Z] > authorizing via signed-in user (carlosaugusto@bodyfitteam.com.br)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-08-01T14:46:24.300Z] [hub] writing locator at C:\Users\Adm\AppData\Local\Temp\hub-blog-82159.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-08-01T14:46:24.331Z] defaultcredentials: writing to file C:\Users\Adm\AppData\Roaming\firebase\carlosaugusto_bodyfitteam_com.br_application_default_credentials.json
+[debug] [2022-08-01T14:46:24.333Z] Setting GAC to C:\Users\Adm\AppData\Roaming\firebase\carlosaugusto_bodyfitteam_com.br_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Adm\\AppData\\Roaming\\firebase\\carlosaugusto_bodyfitteam_com.br_application_default_credentials.json"}}
+[debug] [2022-08-01T14:46:24.336Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/blog-82159/adminSdkConfig [none]
+[debug] [2022-08-01T14:46:24.740Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/blog-82159/adminSdkConfig 200
+[debug] [2022-08-01T14:46:24.741Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/blog-82159/adminSdkConfig {"projectId":"blog-82159","storageBucket":"blog-82159.appspot.com"}
+[debug] [2022-08-01T14:46:24.763Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-01T14:46:24.763Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-01T14:46:24.763Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Adm\\.cache\\firebase\\emulators\\ui-v1.8.1\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Adm\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.8.1\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-08-01T14:46:24.927Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\" for Cloud Functions..."}}
+[debug] [2022-08-01T14:46:25.050Z] Validating nodejs source
+[debug] [2022-08-01T14:46:28.331Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T14:46:28.331Z] Building nodejs source
+[debug] [2022-08-01T14:46:28.331Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T14:46:28.333Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T14:46:28.626Z] Serving at port 9005
+
+[debug] [2022-08-01T14:46:28.739Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T14:46:28.750Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions[us-central1-user]: http function initialized (http://localhost:5001/blog-82159/us-central1/user). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/blog-82159/us-central1/user)."}}
+[info] +  functions[us-central1-feed]: http function initialized (http://localhost:5001/blog-82159/us-central1/feed). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/blog-82159/us-central1/feed)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-08-01T16:17:19.434Z] ----------------------------------------------------------------------
+[debug] [2022-08-01T16:17:19.436Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Adm\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2022-08-01T16:17:19.436Z] CLI Version:   11.4.0
+[debug] [2022-08-01T16:17:19.437Z] Platform:      win32
+[debug] [2022-08-01T16:17:19.437Z] Node Version:  v16.16.0
+[debug] [2022-08-01T16:17:19.446Z] Time:          Mon Aug 01 2022 13:17:19 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2022-08-01T16:17:19.446Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-01T16:17:19.519Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-01T16:17:19.519Z] > authorizing via signed-in user (carlosaugusto@bodyfitteam.com.br)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project blog-82159. This may result in unexpected behavior. 
+[debug] [2022-08-01T16:17:19.596Z] [hub] writing locator at C:\Users\Adm\AppData\Local\Temp\hub-blog-82159.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-08-01T16:17:19.649Z] defaultcredentials: writing to file C:\Users\Adm\AppData\Roaming\firebase\carlosaugusto_bodyfitteam_com.br_application_default_credentials.json
+[debug] [2022-08-01T16:17:19.652Z] Setting GAC to C:\Users\Adm\AppData\Roaming\firebase\carlosaugusto_bodyfitteam_com.br_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Adm\\AppData\\Roaming\\firebase\\carlosaugusto_bodyfitteam_com.br_application_default_credentials.json"}}
+[debug] [2022-08-01T16:17:19.654Z] > refreshing access token with scopes: []
+[debug] [2022-08-01T16:17:19.656Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-08-01T16:17:19.656Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-01T16:17:19.904Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-08-01T16:17:19.904Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-08-01T16:17:19.912Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/blog-82159/adminSdkConfig [none]
+[debug] [2022-08-01T16:17:20.836Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/blog-82159/adminSdkConfig 200
+[debug] [2022-08-01T16:17:20.836Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/blog-82159/adminSdkConfig {"projectId":"blog-82159","storageBucket":"blog-82159.appspot.com"}
+[debug] [2022-08-01T16:17:20.870Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-08-01T16:17:20.870Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-08-01T16:17:20.870Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Adm\\.cache\\firebase\\emulators\\ui-v1.8.1\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Adm\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.8.1\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-08-01T16:17:21.242Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\" for Cloud Functions..."}}
+[debug] [2022-08-01T16:17:21.415Z] Validating nodejs source
+[debug] [2022-08-01T16:17:24.893Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T16:17:24.893Z] Building nodejs source
+[debug] [2022-08-01T16:17:24.893Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T16:17:24.895Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T16:17:25.281Z] Serving at port 9005
+
+[debug] [2022-08-01T16:17:25.468Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T16:17:25.482Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions[us-central1-user]: http function initialized (http://localhost:5001/blog-82159/us-central1/user). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/blog-82159/us-central1/user)."}}
+[info] +  functions[us-central1-feed]: http function initialized (http://localhost:5001/blog-82159/us-central1/feed). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/blog-82159/us-central1/feed)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-08-01T17:36:14.270Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\utils\HttpUtil.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\utils\\HttpUtil.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:36:15.286Z] Validating nodejs source
+[debug] [2022-08-01T17:36:18.416Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:36:18.417Z] Building nodejs source
+[debug] [2022-08-01T17:36:18.417Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:36:18.419Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:36:18.452Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\utils\HttpUtil.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\utils\\HttpUtil.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:36:18.675Z] Serving at port 9005
+
+[debug] [2022-08-01T17:36:18.821Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:36:18.828Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:36:19.456Z] Validating nodejs source
+[debug] [2022-08-01T17:36:22.481Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:36:22.481Z] Building nodejs source
+[debug] [2022-08-01T17:36:22.481Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:36:22.482Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:36:22.706Z] Serving at port 9005
+
+[debug] [2022-08-01T17:36:22.812Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:36:22.822Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:36:29.361Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\services\UserServices.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\services\\UserServices.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:36:30.369Z] Validating nodejs source
+[debug] [2022-08-01T17:36:33.559Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:36:33.559Z] Building nodejs source
+[debug] [2022-08-01T17:36:33.559Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:36:33.559Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:36:33.575Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\services\UserServices.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\services\\UserServices.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:36:33.779Z] Serving at port 9005
+
+[debug] [2022-08-01T17:36:33.915Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:36:33.922Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:36:34.584Z] Validating nodejs source
+[debug] [2022-08-01T17:36:37.511Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:36:37.512Z] Building nodejs source
+[debug] [2022-08-01T17:36:37.512Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:36:37.513Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:36:37.522Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\services\UserServices.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\services\\UserServices.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:36:37.761Z] Serving at port 9005
+
+[debug] [2022-08-01T17:36:37.897Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:36:37.906Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:36:38.527Z] Validating nodejs source
+[debug] [2022-08-01T17:36:41.539Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:36:41.539Z] Building nodejs source
+[debug] [2022-08-01T17:36:41.539Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:36:41.542Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:36:41.785Z] Serving at port 9005
+
+[debug] [2022-08-01T17:36:41.933Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:36:41.939Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:46:51.209Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\services\UserServices.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\services\\UserServices.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:46:52.214Z] Validating nodejs source
+[debug] [2022-08-01T17:46:55.258Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:46:55.258Z] Building nodejs source
+[debug] [2022-08-01T17:46:55.258Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:46:55.258Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:46:55.517Z] Serving at port 9005
+
+[debug] [2022-08-01T17:46:55.643Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:46:55.648Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:46:56.350Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\index.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:46:57.366Z] Validating nodejs source
+[debug] [2022-08-01T17:47:00.386Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:47:00.386Z] Building nodejs source
+[debug] [2022-08-01T17:47:00.386Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:47:00.387Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:47:00.642Z] Serving at port 9005
+
+[debug] [2022-08-01T17:47:00.748Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:47:00.758Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:47:04.973Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\index.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:47:05.986Z] Validating nodejs source
+[debug] [2022-08-01T17:47:08.991Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:47:08.991Z] Building nodejs source
+[debug] [2022-08-01T17:47:08.991Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:47:08.991Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:47:09.253Z] Serving at port 9005
+
+[debug] [2022-08-01T17:47:09.388Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:47:09.401Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:47:25.402Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\index.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:47:26.405Z] Validating nodejs source
+[debug] [2022-08-01T17:47:29.475Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:47:29.475Z] Building nodejs source
+[debug] [2022-08-01T17:47:29.475Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:47:29.475Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:47:29.748Z] Serving at port 9005
+
+[debug] [2022-08-01T17:47:29.892Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:47:29.897Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:47:33.832Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\index.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:47:34.843Z] Validating nodejs source
+[debug] [2022-08-01T17:47:37.801Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:47:37.801Z] Building nodejs source
+[debug] [2022-08-01T17:47:37.801Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:47:37.801Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:47:38.059Z] Serving at port 9005
+
+[debug] [2022-08-01T17:47:38.170Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:47:38.176Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:47:40.659Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\services\UserServices.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\services\\UserServices.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:47:41.671Z] Validating nodejs source
+[debug] [2022-08-01T17:47:45.511Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:47:45.511Z] Building nodejs source
+[debug] [2022-08-01T17:47:45.512Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:47:45.512Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:47:45.793Z] Serving at port 9005
+
+[debug] [2022-08-01T17:47:45.928Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:47:45.934Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:47:48.488Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\services\PostagemServices.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\services\\PostagemServices.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:47:49.495Z] Validating nodejs source
+[debug] [2022-08-01T17:47:53.514Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:47:53.515Z] Building nodejs source
+[debug] [2022-08-01T17:47:53.515Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:47:53.515Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:47:53.531Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\services\PostagemServices.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\services\\PostagemServices.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:47:53.808Z] Serving at port 9005
+
+[debug] [2022-08-01T17:47:53.942Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:47:53.948Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:47:54.537Z] Validating nodejs source
+[debug] [2022-08-01T17:47:57.692Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:47:57.692Z] Building nodejs source
+[debug] [2022-08-01T17:47:57.692Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:47:57.693Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:47:57.934Z] Serving at port 9005
+
+[debug] [2022-08-01T17:47:58.041Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:47:58.046Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:48:07.843Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\services\PostagemServices.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\services\\PostagemServices.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:48:08.845Z] Validating nodejs source
+[debug] [2022-08-01T17:48:11.945Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:48:11.945Z] Building nodejs source
+[debug] [2022-08-01T17:48:11.945Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:48:11.946Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:48:12.186Z] Serving at port 9005
+
+[debug] [2022-08-01T17:48:12.295Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:48:12.301Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:48:25.035Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\index.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:48:26.039Z] Validating nodejs source
+[debug] [2022-08-01T17:48:29.106Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:48:29.106Z] Building nodejs source
+[debug] [2022-08-01T17:48:29.106Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:48:29.107Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:48:29.120Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\index.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:48:29.356Z] Serving at port 9005
+
+[debug] [2022-08-01T17:48:29.498Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:48:29.507Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:48:30.134Z] Validating nodejs source
+[debug] [2022-08-01T17:48:33.116Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:48:33.116Z] Building nodejs source
+[debug] [2022-08-01T17:48:33.117Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:48:33.117Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:48:33.335Z] Serving at port 9005
+
+[debug] [2022-08-01T17:48:33.459Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:48:33.464Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-08-01T17:48:36.911Z] File C:\Users\Adm\Desktop\D3V\Projetos_pessoais\Flutter\firebase\functions\src\services\UserServices.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Adm\\Desktop\\D3V\\Projetos_pessoais\\Flutter\\firebase\\functions\\src\\services\\UserServices.ts changed, reloading triggers"}}
+[debug] [2022-08-01T17:48:37.917Z] Validating nodejs source
+[debug] [2022-08-01T17:48:41.123Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-08-01T17:48:41.124Z] Building nodejs source
+[debug] [2022-08-01T17:48:41.124Z] Analyzing nodejs backend spec
+[debug] [2022-08-01T17:48:41.124Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-08-01T17:48:41.365Z] Serving at port 9005
+
+[debug] [2022-08-01T17:48:41.470Z] Got response from /__/functions.yaml {"endpoints":{"user":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"user"},"feed":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"feed"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-08-01T17:48:41.476Z] shutdown requested via /__/quitquitquit
+
